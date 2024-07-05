@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+
+.about_container{
+   
+    height:100vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+
+
+}
+
+
+.about_container .container{
+
+    display:flex;
+    flex-direction: row;
+    height: 8%;
+    
+
+}
+
+
+.about_container .image_container{
+    position: relative;
+    height:100%;
+    width:55%; 
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+   
+    
+      
+}
+
+.about_container .image{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background:url('../Images/consimage.jpg');
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin-left: 30px;
+   
+
+}
+
+.about_container .content_container{
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.about_container .content_container .con_container{
+    display: flex;
+    flex-direction: column;
+    height:400px;
+    justify-content: space-between;
+    
+}
+
+
+.about_container .content_container .con_container .con_header{
+    font-size: 2.0rem;
+
+    font-weight: 780;
+    line-height: 38px;
+}
+
+
+.about_container .content_container .con_container .con_subheader{
+    font-size: 1.7rem;
+    font-weight: 680;
+}
+
+.about_container .content_container .con_container .con_subheader span{
+    font-size: 1.7rem;
+    font-weight: 680;
+    color:rgb(171, 171, 50);
+}
+
+.about_container .content_container .con_container .content1, .content2{
+    font-weight: initial;
+    font-size: 0.87rem;
+    color:rgb(61, 61, 61);
+    word-wrap: break-word;
+    word-break: break-word;
+    line-height: 25px;
+}
+
+
+.about_container .content_container .con_container .download_link{
+    cursor:pointer;
+    font-size: 15px;
+    word-spacing: 1px;
+    background-color: yellow;
+    width:35%;
+    height: auto;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline:none;
+    gap:6px;
+    font-weight: 600;
+    border-radius: 15px;
+    text-decoration: none;
+    color:black;
+}
+
+
+.about_container .content_container .con_container .download_link:hover{
+    background-color: black;
+    color:yellow;
+
+}
+
+
+.about_container .content_container .con_container .download_link .download_icon{
+    font-size: 1x;
+}
+
+
+
+@media (max-width:767px){
+    .about_container{
+       
+        height:120vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: -320px;
+   
+
+    }
+
+    .about_container .container{
+     
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        height:90%; 
+        outline: none;
+    }
+
+    .about_container .container .image_container{
+    
+        height:30%;
+        width:100%;
+        padding:23px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+      
+    }
+
+    .about_container .image{
+        
+        height: 250px;
+        width: 100%;
+        transform: translate(-10%);
+        outline: none;
+
+    }
+
+    .about_container .content_container {
+          
+            position: relative;
+            width:100%; 
+            height:70%;
+            display:flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top:20px;  
+    }
+
+    .about_container .con_container{ 
+     
+        padding:30px;
+        height:100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap:17px;
+
+    }
+
+    .about_container .con_container .download_link{
+            width:80%  !important;
+             }
+
+}
